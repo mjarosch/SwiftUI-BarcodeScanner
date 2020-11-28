@@ -10,6 +10,8 @@ import SwiftUI
 struct BarcodeScannerView: View {
     @State private var scannedCode = ""
     
+    @State private var isShowingAlert = false
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -27,8 +29,17 @@ struct BarcodeScannerView: View {
                     .font(.largeTitle)
                     .foregroundColor(scannedCode.isEmpty ? .red : .green)
                     .padding()
+                
+                Button {
+                    isShowingAlert = true
+                } label: {
+                    Text("Tap Me")
+                }
             }
             .navigationTitle("Barcode Scanner")
+            .alert(isPresented: $isShowingAlert, content: {
+                Alert(title: Text("Test"), message: Text("This is a test"), dismissButton: .default(Text("Ok")))
+            })
         }
     }
 }
