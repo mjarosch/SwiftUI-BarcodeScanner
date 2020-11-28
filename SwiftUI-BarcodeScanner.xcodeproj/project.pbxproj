@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		2756003C2571B98300517CD1 /* SwiftUI_BarcodeScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2756003B2571B98300517CD1 /* SwiftUI_BarcodeScannerApp.swift */; };
-		2756003E2571B98300517CD1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2756003D2571B98300517CD1 /* ContentView.swift */; };
+		2756003E2571B98300517CD1 /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2756003D2571B98300517CD1 /* BarcodeScannerView.swift */; };
 		275600402571B98300517CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2756003F2571B98300517CD1 /* Assets.xcassets */; };
 		275600432571B98300517CD1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275600422571B98300517CD1 /* Preview Assets.xcassets */; };
+		275600512571D45300517CD1 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275600502571D45300517CD1 /* ScannerViewController.swift */; };
+		27DEA1DB2571E251001F2D6A /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DEA1DA2571E251001F2D6A /* ScannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		275600382571B98300517CD1 /* SwiftUI-BarcodeScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-BarcodeScanner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2756003B2571B98300517CD1 /* SwiftUI_BarcodeScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_BarcodeScannerApp.swift; sourceTree = "<group>"; };
-		2756003D2571B98300517CD1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2756003D2571B98300517CD1 /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
 		2756003F2571B98300517CD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		275600422571B98300517CD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		275600442571B98300517CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		275600502571D45300517CD1 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		27DEA1DA2571E251001F2D6A /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +56,13 @@
 		2756003A2571B98300517CD1 /* SwiftUI-BarcodeScanner */ = {
 			isa = PBXGroup;
 			children = (
+				275600502571D45300517CD1 /* ScannerViewController.swift */,
 				2756003B2571B98300517CD1 /* SwiftUI_BarcodeScannerApp.swift */,
-				2756003D2571B98300517CD1 /* ContentView.swift */,
+				2756003D2571B98300517CD1 /* BarcodeScannerView.swift */,
 				2756003F2571B98300517CD1 /* Assets.xcassets */,
 				275600442571B98300517CD1 /* Info.plist */,
 				275600412571B98300517CD1 /* Preview Content */,
+				27DEA1DA2571E251001F2D6A /* ScannerView.swift */,
 			);
 			path = "SwiftUI-BarcodeScanner";
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2756003E2571B98300517CD1 /* ContentView.swift in Sources */,
+				2756003E2571B98300517CD1 /* BarcodeScannerView.swift in Sources */,
+				27DEA1DB2571E251001F2D6A /* ScannerView.swift in Sources */,
+				275600512571D45300517CD1 /* ScannerViewController.swift in Sources */,
 				2756003C2571B98300517CD1 /* SwiftUI_BarcodeScannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

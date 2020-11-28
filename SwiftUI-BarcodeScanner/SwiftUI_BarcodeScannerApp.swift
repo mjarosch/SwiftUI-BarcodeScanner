@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUI_BarcodeScannerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BarcodeScannerView()
         }
     }
 }
